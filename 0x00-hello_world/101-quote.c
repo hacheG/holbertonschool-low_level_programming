@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-write(1, "and that piece of art is useful\" - Dora Kopar, 2015-10-19", 57);
+write(1, "and that piece of art is useful\" - Dora Kopar, 2015-10-19", 58);
 return (1);
 }
