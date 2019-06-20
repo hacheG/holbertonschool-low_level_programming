@@ -9,12 +9,12 @@ int main(void)
 {
 	int i;
 
-	for (i = 48 ; i < 72 ; i++)
+	for (i = 48 ; i < 58 ; i++)
 	{
-		if (i == 58 || i == 59 || i == 60 || i == 61 || i == 62 || i == 63 || i == 64)
-		{
-			continue;
-		}
+		putchar(i);
+	}
+	for (i = 65 ; i < 71 ; i++)
+	{
 		putchar(i);
 	}
 	putchar('\n');
