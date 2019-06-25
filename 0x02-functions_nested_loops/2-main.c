@@ -5,14 +5,8 @@
  *
  * Return: Always 0.
  */
-int _islower(int c)
+int main(void)
 {
-  if (c >= 97 && c <= 123)
-    {
-      return (1);
-    }
-  else
-    {
-      return (0);
-    }
+    print_alphabet_x10();
+    return (0);
 }
