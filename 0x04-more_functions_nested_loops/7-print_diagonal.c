@@ -1,32 +1,28 @@
 #include "holberton.h"
 /**
- * print_diagonal - Check if a number is greater than 0
- * @n: The number to be checked
- *
- *
+ * print_diagonal - draws a diagonal line across (n) terminal lines.
+ * @n: the number of lines to print
  */
 void print_diagonal(int n)
 {
-	int a = 0;
-	int z;
+	int i, j;
 
-	if (n <= 0)
+	if (n > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		while (a != n)
+		for (j = 1; j <= n; j++)
 		{
-			_putchar(92);
-			_putchar('\n');
-			a++;
-
-			z = a;
-			while (z--)
+			for (i = 1; i <= j; i++)
 			{
-				_putchar(' ');
+				if (i != 1)
+					_putchar(' ');
+				if (i == j)
+				{
+					_putchar('\\');
+					_putchar('\n');
+				}
 			}
 		}
 	}
+	else
+		_putchar('\n');
 }
