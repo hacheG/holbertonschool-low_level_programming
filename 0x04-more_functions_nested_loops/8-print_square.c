@@ -1,33 +1,21 @@
 #include "holberton.h"
 /**
- * print_square - Check if a number is greater than 0
- * @size: The number to be checked
- *
+ * print_square - draws a square using multiple terminal lines and #'s.
+ * @n: the number of # to print in each line.
  */
-void print_square(int size)
+void print_square(int n)
 {
-	int a;
-	int size2, size1;
+	int i, j;
 
-	if (size <= 0)
+	if (n > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		size1 = size;
-		while (size1)
+		for (i = 0; i < n; i++)
 		{
-			a = 0;
-			size2 = size;
-			while (a != size2)
-			{
-				_putchar(35);
-				a++;
-			}
-			size1--;
+			for (j = 0; j < n; j++)
+				_putchar('#');
 			_putchar('\n');
 		}
-		_putchar('\n');
 	}
+	else
+		_putchar('\n');
 }
