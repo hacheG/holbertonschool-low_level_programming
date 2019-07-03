@@ -1,22 +1,17 @@
 #include "holberton.h"
 /**
- * print_rev - Check if a number is greater than 0
- * @s: The number to be checked
+ * print_rev - prints string, from pointer to string, in reverse
+ * @s: string to print in reverse
+ *
+ * Return: void
  */
 void print_rev(char *s)
 {
-	int i;
-	int coun = 0;
+	int i = 0;
 
-	for (i = 0; *s != '\0'; i++)
-	{
-		coun = coun + 1;
-		s++;
-	}
-	for (i = coun; i >= 0; i--)
-	{
-		s--;
-		_putchar(*s);
-	}
+	while (s[i] != 0)
+		i++;
+	for (i--; i >= 0; i--)
+		_putchar(s[i]);
 	_putchar('\n');
 }
