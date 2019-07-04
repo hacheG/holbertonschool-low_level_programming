@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <string.h>
 /**
  * _strcat - Check if a number is greater than 0
  * @dest: The number to be checked
