@@ -3,7 +3,7 @@
  * _strcat - Check if a number is greater than 0
  * @dest: The number to be checked
  * @src: The number to be checked
- * Return: dest
+ * Return: concate strings
  */
 char *_strcat(char *dest, char *src)
 {
