@@ -46,3 +46,9 @@ flycheck_*.el
 
 # network security
 /network-security.data
+
+# main
+*-main.c
+
+#putchar
+*_putchar.c
