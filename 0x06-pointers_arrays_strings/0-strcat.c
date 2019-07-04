@@ -17,6 +17,7 @@ char *_strcat(char *dest, char *src)
 	for (b = 0; b != 0; a++)
 	{
 		coun2 = coun2 + 1;
+	}
 
 	for (i = coun, j = 0; j < coun2; i++, j++)
 	{
