@@ -7,14 +7,16 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int a, b, i, j, coun = 0, coun2 = 0;
+	int a, b, i, j;
+	int coun = 0;
+	int coun2 = 0;
 
-	for (a = 0; a != 0; a++)
+	for (a = 0; dest[a] != 0; a++)
 	{
 		coun = coun + 1;
 	}
 
-	for (b = 0; b != 0; a++)
+	for (b = 0; src[b] != 0; b++)
 	{
 		coun2 = coun2 + 1;
 	}
