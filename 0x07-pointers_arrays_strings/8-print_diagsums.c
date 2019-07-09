@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * print_diagsums - Makes the sum of two numbers
  * @a: First operand
