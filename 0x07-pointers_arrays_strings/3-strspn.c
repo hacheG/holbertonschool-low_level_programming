@@ -1,21 +1,32 @@
 #include "holberton.h"
 
 /**
- * _strspn - lenght of a prefix
- * @s: array
- * @accept: number to accept
+ * _strspn - gets the length of a prefix
+ * @s: string
+ * @accept: substring
  * Return: number of bytes
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int lenght = 0;
+	unsigned int len = 0;
+	unsigned int con1;
+	unsigned int con2;
 
-	for (lenght = 0; *s != '\0' && *accept != '\0'; s++, accept++)
-		if (*s == *accept)
-			lenght++;
-		else
+	for (con1 = 0; s[con1]; con1++)
+	{
+		if (len != con1)
+		{
 			break;
+		}
+		for (con2 = 0; accept[con2]; con2++)
+		{
+			if (s[len] == accept[con2])
+			{
+				len++;
+			}
+		}
+	}
 
-	return (lenght);
+	return (len);
 }
