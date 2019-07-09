@@ -1,6 +1,11 @@
 #include "holberton.h"
-#include <stdio.h>
-
+/**
+ * print_diagsums - Makes the sum of two numbers
+ * @a: First operand
+ * @size: Second operand
+ *
+ * Return: The sum of the two parameters
+ */
 void print_diagsums(int *a, int size)
 {
 	int i, sum1, sum2;
