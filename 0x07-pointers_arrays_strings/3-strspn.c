@@ -1,32 +1,21 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
- * _strspn - returns number of bytes in the initial sengment s
- * @s: string to count in
- * @accept: chars to accept
- * Return: number of bytes;
+ * _strspn - lenght of a prefix
+ * @s: array
+ * @accept: number to accept
+ * Return: number of bytes
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int num;
-	int i, j, t;
+	unsigned int lenght = 0;
 
-	i = 0;
-	while (s[i] != '\0')
-	{
-		t = 0;
-		for (j = 0; accept[j] != '\0'; j++)
-		{
-			if (s[i] == accept[j])
-				t = 1;
-		}
-		j = 0;
-		if (t == 0)
+	for (lenght = 0; *s != '\0' && *accept != '\0'; s++, accept++)
+		if (*s == *accept)
+			lenght++;
+		else
 			break;
-		num++;
-		i++;
-	}
-	return (i);
+
+	return (lenght);
 }

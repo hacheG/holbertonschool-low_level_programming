@@ -1,20 +1,24 @@
 #include "holberton.h"
+
 /**
- * _memcpy - Makes the sum of two numbers
- * @dest: First operand
- * @src: Second operand
- * @n: Second operand
- *
- * Return: The sum of the two parameters
- */
+ * *_memcpy - copies memory area
+ * @dest: pointer to memory
+ * @src: pointer to memory that will be copy
+ * @n: bytes to copy
+ * Return: dest
+ **/
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int i;
+	unsigned int i = 0;
 
-	for (i = 0; i < n; i++)
+	while (i < n)
 	{
-		dest[i] = src[i];
+		*dest = *src;
+		dest++;
+		src++;
+		i++;
 	}
-	return (*dest);
 
+	return (dest);
 }
