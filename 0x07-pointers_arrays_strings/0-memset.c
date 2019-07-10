@@ -1,21 +1,17 @@
 #include "holberton.h"
 /**
- 3 3 * _memset - Makes the sum of two numbers
- 4 4 * @s: First operand
- 5 5 * @b: Second operand
- 6 6 * @n: Second operand
- 7 7 *
- 8 8 * Return: The sum of the two parameters
- 9 9 */
-
+* _memset - entry point
+* Description: sets the memory of the bytes.
+* @b: n-val.
+* @s: f-byte.
+* @n: c-bytes.
+* Return: Pointer s.
+*/
 char *_memset(char *s, char b, unsigned int n)
-
 {
-	int i;
+	unsigned int mem;
 
-	for (i = 0; i < n; i++)
-	{
-		s[i] = b;
-	}
-	return (b);
+	for (mem = 1; mem <= n; mem++)
+		*(s + (mem - 1)) = b;
+	return (s);
 }

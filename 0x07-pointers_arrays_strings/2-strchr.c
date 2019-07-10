@@ -1,25 +1,26 @@
-char *_strchr(char *s, char c)
 #include "holberton.h"
 /**
- * _memcpy - Makes the sum of two numbers
- * @dest: First operand
- * @src: Second operand
- * @n: Second operand
- *
- * Return: The sum of the two parameters
+ **_strchr - entry point
+ * Description: locates a character in a string
+ *@s: pointer with string
+ *@c: char
+ *Return: s
  */
+char *_strchr(char *s, char c)
 {
-        int i,j;
+	int lchar;
 
-
-        for (i = 0; s[i] != '\0'; i++)
-        {
-		s++;
-		if (s[i] == c || s[i] > c)
+	for (lchar = 0; s[0] != '\0'; lchar++)
+	{
+		if (s[0] == c)
 		{
-			return(s);
+			return (s);
 		}
-
-        }
-        return ('\0');
+		s++;
+	}
+	if (s[0] == c)
+	{
+		return (s);
+	}
+	return ('\0');
 }

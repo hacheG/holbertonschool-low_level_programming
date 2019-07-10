@@ -1,10 +1,8 @@
-#include "holberton.h"
-
+#include <stdio.h>
 /**
- * set_string - sets the value of a pointer to a char
- * @s: pointer to set
- * @to: where to set it to
- * Return: none
+ * set_string - sets the value of a pointer to char
+ * @s: pointer to char
+ * @to: char to set pointer to
  */
 
 void set_string(char **s, char *to)

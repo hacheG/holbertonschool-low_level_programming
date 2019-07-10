@@ -1,27 +1,19 @@
 #include "holberton.h"
-
+#include <stdio.h>
 
 /**
- * print_chessboard - prints a chessboard
- * @a: chessboard value
- * Return: none
- */
+ * print_chessboard - print a bidimencional string
+ * @a: string to print
+ **/
 
 void print_chessboard(char (*a)[8])
 {
 	int i, j;
 
-	i = 0;
-	while (i < 8)
+	for (i = 0; i < 8; i++)
 	{
-		j = 0;
-		while (j < 8)
-		{
+		for (j = 0; j < 8; j++)
 			_putchar(a[i][j]);
-			if (j == 7)
-				_putchar('\n');
-			j++;
-		}
-		i++;
+		_putchar('\n');
 	}
 }
