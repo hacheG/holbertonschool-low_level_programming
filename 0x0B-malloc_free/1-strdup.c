@@ -11,6 +11,11 @@ char *_strdup(char *str)
 	int i, j;
 	int coun = 0;
 
+	if (r == NULL)
+	{
+		return (NULL);
+	}
+
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		coun = coun + 1;
