@@ -36,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		q[k] = s1[k];
 	}
-	for (k = k, e = 0; s2[e] != '\0' && e < n; e++, k++)
+	for (e = 0; s2[e] != '\0' && e < n; e++, k++)
 	{
 		q[k] = s2[e];
 	}
