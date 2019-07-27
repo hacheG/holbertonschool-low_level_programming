@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-
+#include <stdlib.h>
 /**
  * main - check the code for Holberton School students.
  *
