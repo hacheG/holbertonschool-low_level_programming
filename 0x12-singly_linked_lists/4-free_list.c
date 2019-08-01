@@ -3,20 +3,23 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * free_list - function that free a list_t list.
- * @head: pointer to list_t list
- * Return: nothing
- **/
+ * free_list - Frees a list of nodes
+ * @head: pointer to the first element of the list
+ */
+
 void free_list(list_t *head)
 {
-	list_t *temp;
+	list_t *tmp;
 
-	while (head != NULL)
+	if (head == NULL)
+		return;
+	while (head->next != NULL)
 	{
-		temp = head;
-		head = head->next;
-		free(temp->str);
-		free(temp);
+		tmp = head->next;
+		free(head->str);
+		free(head);
+		head = tmp;
 	}
-	head = NULL;
+	free(head->str);
+	free(head);
 }
