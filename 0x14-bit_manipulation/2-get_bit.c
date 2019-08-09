@@ -1,17 +1,19 @@
 #include "holberton.h"
 #include <stdio.h>
-#include <stdlib.h>
-
 /**
- * get_bit - returns the value of a bit at a given index
- * @n: number to be traversed
- * @index: starting from 0, is the index of the bit you want to get
- * Return: the value of the bit at index or -1 if an error occured
- **/
+ * get_bit - Returns a value at a given index
+ * @n: Number to check the value of
+ * @index: The index to look for the number
+ * Return: A value at a given index or -1 if an error occours
+ */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	if (index > (sizeof(unsigned long int) * 8));
-	return (-1);
+	unsigned int i;
 
-	return ((n >> index) & 1);
+	if (index > (sizeof(8) * 8))
+		return (-1);
+
+	for (i = 0; i < index; i++)
+		n = n >> 1;
+	return ((n & 1));
 }
