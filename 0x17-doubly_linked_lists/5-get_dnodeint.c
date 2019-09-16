@@ -15,5 +15,5 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 		count++;
 		temp = temp->next;
 	}
-	return(temp);
+	return (temp);
 }
