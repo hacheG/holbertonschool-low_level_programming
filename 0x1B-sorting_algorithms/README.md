@@ -64,6 +64,10 @@ ___
 ### 1. Insertion sort
 Write a function that sorts a doubly linked list of integers in ascending
 order using the Insertion sort algorithm
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=ROalU379l3U
+" target="_blank"><img src="http://img.youtube.com/vi/ROalU379l3U/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 ```
 alex@/tmp/sort$ cat 1-main.c
 #include <stdio.h>
@@ -155,7 +159,10 @@ ___
 ### 2. Selection sort
 Write a function that sorts an array of integers in ascending order using the
 Selection sort algorithm
-___
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Ns4TPTC8whw
+" target="_blank"><img src="http://img.youtube.com/vi/Ns4TPTC8whw/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 ```
 alex@/tmp/sort$ cat 2-main.c
 #include <stdio.h>
@@ -198,6 +205,7 @@ ___
 ### 3. Quick sort
 Write a function that sorts an array of integers in ascending order using the
 Quick sort algorithm
+
 ```
 alex@/tmp/sort$ cat 3-main.c
 #include <stdio.h>
