@@ -3,7 +3,7 @@
 ### 0. Bubble sort
 Write a function that sorts an array of integers in ascending order using the
 Bubble sort algorithm
-'''
+```
 alex@/tmp/sort$ cat 0-main.c 
 #include <stdio.h>
 #include <stdlib.h>
@@ -54,7 +54,7 @@ alex@/tmp/sort$ ./bubble
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$ 
-'''
+``` 
 ### 1. Insertion sort
 Write a function that sorts a doubly linked list of integers in ascending
 order using the Insertion sort algorithm
