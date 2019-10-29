@@ -24,9 +24,12 @@ void selection_sort(int *array, size_t size)
 				min = j;
 			}
 		}
-		aux = array[i];
-		array[i] = array[min];
-		array[min] = aux;
-		print_array(array, size);
+		if (i != min)
+		{
+			aux = array[i];
+			array[i] = array[min];
+			array[min] = aux;
+			print_array(array, size);
+		}
 	}
 }
