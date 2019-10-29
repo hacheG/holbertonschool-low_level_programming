@@ -9,15 +9,15 @@
 
 void selection_sort(int *array, size_t size)
 {
-	int i, j, aux, min;
+	unsigned int i, j, aux, min;
 
 	if (!array || size < 2)
 		return;
 
-	for (i=0; i<size; i++)
+	for (i = 0; i < size; i++)
 	{
 		min = i;
-		for (j=i+1; j<size; j++)
+		for (j = i + 1; j < size; j++)
 		{
 			if (array[j] < array[min])
 			{
