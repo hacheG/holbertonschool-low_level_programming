@@ -4,8 +4,8 @@ ___
 ### 0. Bubble sort
 Write a function that sorts an array of integers in ascending order using the
 Bubble sort algorithm
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/lyZQPjUT5B4/0.jpg)](http://www.youtube.com/watch?v=lyZQPjUT5B4)
-
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/lyZQPjUT5B4/0.jpg)]
+(http://www.youtube.com/watch?v=lyZQPjUT5B4)
 
 ```
 alex@/tmp/sort$ cat 0-main.c 
