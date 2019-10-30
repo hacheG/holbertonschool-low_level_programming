@@ -79,9 +79,9 @@ void quickSort(int arr[], int low, int high, size_t size)
 
 void quick_sort(int *array, size_t size)
 {
-	/**int low = 0;*/
+	int low = 0;
 
 	if (!array || size < 2)
 		return;
-	quickSort(array, 0, size - 1, size);
+	quickSort(array, low, size - 1, size);
 }
