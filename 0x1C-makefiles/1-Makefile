@@ -1,0 +1,5 @@
+#  it is a new use for variables
+CC=gcc
+SRC=main.c holberton.c
+all:
+		$(CC) $(SRC) -o holberton
