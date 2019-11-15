@@ -1,0 +1,16 @@
+# ok i will erase things
+CC=gcc
+SRC=main.c holberton.c
+OBJ=$(SRC:.c=.o)
+NAME=holberton
+RM=rm -rf
+all: $(OBJ)
+		$(CC) $(OBJ) -o $(NAME)
+clean:
+		$(RM) *~ $(NAME)
+oclean:
+		$(RM) $(OBJ)
+fclean:
+		$(RM) *~ $(NAME) $(OBJ)
+re:
+		all
