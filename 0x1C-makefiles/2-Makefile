@@ -1,0 +1,7 @@
+# thaks csheet.com/en/latest/notes/c_make.html
+CC=gcc
+SRC=main.c holberton.c
+OBJ=$(SRC:.c=.o)
+NAME=holberton
+all: $(OBJ)
+		$(CC) $(OBJ) -o $(NAME)
