@@ -1,0 +1,4 @@
+# this is my first makefile, i will see if run (i'll hope)
+
+all:
+		gcc main.c holberton.c -o holberton
